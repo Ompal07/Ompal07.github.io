@@ -3,16 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>64Bit - Mobile Application Development Team</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>64Bit Development Company</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
-    <div class="container">
-        <h1 class="team-name">64Bit</h1>
-        <p class="tagline">We develop and host mobile apps for iOS and Android</p>
-        <button id="contact-button">Contact Us</button>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="64Bit Logo">
+                <h1>64Bit</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" aria-label="Toggle Theme">
+                            <span id="toggle-icon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to 64Bit</h2>
+            <p>We develop cutting-edge mobile and web applications tailored to your needs.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Mobile Application Development</h3>
+                    <p>Creating user-friendly and robust mobile applications for iOS and Android platforms.</p>
+                </div>
+                <div class="card">
+                    <h3>Web Application Development</h3>
+                    <p>Building scalable and efficient web applications using the latest technologies.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive interfaces and engaging user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="projects-grid">
+                <!-- Sample Project Template -->
+                <div class="project-card">
+                    <img src="images/sample-project.png" alt="Project Screenshot">
+                    <h3>Project Title</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <!-- Repeat project-card divs as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>64Bit is a leading development company specializing in mobile and web applications. Our team of experts is dedicated to delivering high-quality solutions that drive your business forward.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="mailto:sixfourbit.dev@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 64Bit Development Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
